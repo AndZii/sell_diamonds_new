@@ -1,0 +1,13 @@
+%h1.page-header
+  About SellDiamondsQueens.com
+  %br
+  %small Top Rated Diamonds Buyer in NYC
+  %h2
+    %span 
+  %p.lead
+    - unless Content.find_by(name: "about_page_text").nil?
+      %span 
+        = Content.find_by(name: "about_page_text").content
+  %hr
+  %img.img-responsive{:alt => "", :src => "/ph.jpg"}/
+%hr

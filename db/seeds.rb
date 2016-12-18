@@ -30,7 +30,7 @@ Post.create(
     #
     title: "Cash For Diamonds In NYC", 
     #
-    second_title: "'A Diamond Ss Forever…'", 
+    second_title: "'A Diamond Is Forever…'", 
     #
     url: "diamonds-buyer-of-nyc-queens",
     #

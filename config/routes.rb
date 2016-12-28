@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'admin' => "admin_page#index", as: :admin
+
   get 'main/index'
   root 'main#index'    
   get 'where-to-sell-silver-nyc-queens' => 'main#contacts', as: :contacts    

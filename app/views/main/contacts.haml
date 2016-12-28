@@ -1,13 +1,16 @@
 %h1.page-header
-  Where to sell diamonds in NYC?
+  = get_content_by_name("contacts_page_h1_tag")
   %br
-  %small Top rated diamonds and jewelry buyer in New York Area.
-%h2 Contacts:
-%h5 tel: +1 (718) 846-1600
-%h5 email: webuygoodsny@gmail.com
+  %small 
+    = get_content_by_name("contacts_page_h2_tag") 
+%h3 Contacts:
+%h5 
+  = "tel: #{get_content_by_name("company_phone_number")}"
+%h5 
+  = "email: #{get_content_by_name("company_email_address")}"
 %hr
 %p 
-  = "We are easily accessible from Brooklyn, Manhattan, Staten Island, the Bronx and Long Island. Call now or text (718) 846-1600 to schedule an appointment with one of our diamond buyers or email us at webuygoodsny@gmail.com and our representative will help navigate you through an informed, secure transaction that rewards you with the highest payout for your items."
+  = get_content_by_name("contacts_page_description")
 - if false 
   .col-lg-6.col-md-6.col-sm-6.col-xs-12
     %h3.text-center Queens Location #1

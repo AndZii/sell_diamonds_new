@@ -1,11 +1,3 @@
-# This file should contain all the record creation needed to seed the database with its default values.
-# The data can then be loaded with the rake db:seed (or created alongside the db with db:setup).
-#
-# Examples:
-#
-#   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
-#   Mayor.create(name: 'Emanuel', city: cities.first)
-
 posts = Post.all
 contents = Content.all
 
@@ -16,6 +8,38 @@ end
 posts.each do |post|
    post.destroy.save unless post.nil?
 end    
+
+Content.create(:name => "contacts_page_description",
+                :content => "We are easily accessible from Brooklyn, Manhattan, Staten Island, the Bronx and Long Island. Call now or text (718) 846-1600 to schedule an appointment with one of our diamond buyers or email us at webuygoodsny@gmail.com and our representative will help navigate you through an informed, secure transaction that rewards you with the highest payout for your items.")
+
+Content.create(:name => "company_email_address",
+                    :content => "webuygoodsny@gmail.com")
+
+Content.create(:name => "company_phone_number",
+                    :content => "+1-718-846-1600")
+
+Content.create(:name => "contacts_page_h2_tag", :content => "Top rated diamonds and jewelry buyer in New York Area.")
+
+Content.create(:name => "contacts_page_h1_tag", :content => "Where to sell diamonds in NYC?")
+
+Content.create(:name => "footer_about_site",
+                :content => "We buy diamonds and jewelry items in New York City")
+
+Content.create(:name => "footer_about_short_description",
+                :content => "We have best customer service and always pay more, so if You have something to sell - we are your best choice.")
+
+Content.create(:name => "about_page_h1_tag",
+                :content => "Top Rated Diamonds Buyer in NYC")
+
+Content.create(:name => "about_img_path",
+                    content: "/ph.jpg")
+
+
+Content.create(:name => "about_img_alts",
+                    content: "Sell Diamods And jewelry in NYC | QUEENS | MANHATTAN | BROOKLYN | BRONX")
+
+Content.create(:name => "full_website_name",
+                :content => "Sell Diamonds Queens")
 
 Content.create(:name => "about_page_text",
                 :content => "We are easily accessible from Brooklyn, Manhattan, Staten Island, the Bronx and Long Island. Call now or text (718) 846-1600 to schedule an appointment with one of our diamond buyers or email us at webuygoodsny@gmail.com and our representative will help navigate you through an informed, secure transaction that rewards you with the highest payout for your items.")
